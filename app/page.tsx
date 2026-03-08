@@ -2,27 +2,38 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="realm-home">
-      <section className="hero">
+    <main className="realm-home portal-home">
+      <section className="portal-hero">
+        <div className="portal-core" />
+
         <p className="eyebrow">Enter the Realm</p>
-        <h1>Thee Collective Universe</h1>
-        <p className="tagline">
+
+        <h1 className="portal-title">Thee Collective Universe</h1>
+
+        <p className="portal-tagline">
           Crafted in Sound. Forged in Story. Designed to Resonate.
         </p>
-        <p className="intro">
+
+        <p className="portal-intro">
           A live creative signal of audio-cinema, Signal Codex volumes, and
           collaborative storytelling built to move minds and stir emotion.
         </p>
 
-        <div className="hero-actions">
-          <Link href="/listen" className="button primary">
+        <div className="portal-actions">
+          <Link href="/listen" className="portal-button portal-button-primary">
             Enter the Signal
           </Link>
-          <Link href="/links" className="button secondary">
-            Open Link Bridge
+
+          <Link href="/codex" className="portal-button">
+            Open the Codex
           </Link>
-          <Link href="/about" className="button secondary">
-            Explore the Universe
+
+          <Link href="/broadcast" className="portal-button">
+            View Broadcast Network
+          </Link>
+
+          <Link href="/links" className="portal-button">
+            Join the Circle
           </Link>
         </div>
       </section>
