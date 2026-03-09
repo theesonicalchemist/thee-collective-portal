@@ -20,22 +20,34 @@ export default function HomePage() {
         </p>
 
         <div className="portal-actions">
-          <Link href="/listen" className="portal-button portal-button-primary">
-            Enter the Signal
-          </Link>
+  <Link href="/listen" className="portal-button portal-button-primary">
+    <span className="portal-button-icon">
+      <img src="/enter-signal.svg" alt="Enter Thee Signal" />
+    </span>
+    <span>Enter Thee Signal</span>
+  </Link>
 
-          <Link href="/codex" className="portal-button">
-            Open the Codex
-          </Link>
+  <Link href="/codex" className="portal-button">
+    <span className="portal-button-icon">
+      <img src="/open-codex.svg" alt="Open Thee Codex" />
+    </span>
+    <span>Open Thee Codex</span>
+  </Link>
 
-          <Link href="/broadcast" className="portal-button">
-            View Broadcast Network
-          </Link>
+  <Link href="/broadcast" className="portal-button">
+    <span className="portal-button-icon">
+      <img src="/broadcast-network.svg" alt="View Broadcast Network" />
+    </span>
+    <span>View Broadcast Network</span>
+  </Link>
 
-          <Link href="/links" className="portal-button">
-            Join the Circle
-          </Link>
-        </div>
+  <Link href="/links" className="portal-button portal-button-circle">
+    <span className="portal-button-icon">
+      <img src="/listeners-circle.svg" alt="Join Thee Circle" />
+    </span>
+    <span>Join Thee Circle</span>
+  </Link>
+</div>
       </section>
 
       <section className="preview-grid">
